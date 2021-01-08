@@ -1,13 +1,14 @@
 package com.robsoncraftsman.alura.escola.dominio;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-public class CpfTest {
+class CpfTest {
 
 	@Test
-	public void naoDeveCriarCpfComNumeroInvalido() {
+	void naoDeveCriarCpfComNumeroInvalido() {
 		assertThrows(IllegalArgumentException.class, () -> {
 			new Cpf(null);
 		});
@@ -22,8 +23,9 @@ public class CpfTest {
 	}
 
 	@Test
-	public void deveCriarCpfComNumeroValido() {
-		new Cpf("000.000.000-00");
+	void deveCriarCpfComNumeroValido() {
+		final var cpf = new Cpf("000.000.000-00");
+		assertEquals("000.000.000-00", cpf.getValor());
 	}
 
 }

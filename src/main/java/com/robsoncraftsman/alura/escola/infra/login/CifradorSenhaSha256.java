@@ -6,6 +6,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 
 import com.robsoncraftsman.alura.escola.dominio.login.CifradorSenha;
+import com.robsoncraftsman.alura.escola.infra.InfraException;
 
 public class CifradorSenhaSha256 implements CifradorSenha {
 
@@ -20,7 +21,7 @@ public class CifradorSenhaSha256 implements CifradorSenha {
 			final var hashedPassword = md.digest(senha.getBytes(StandardCharsets.UTF_8));
 			return Base64.getEncoder().encodeToString(hashedPassword);
 		} catch (final NoSuchAlgorithmException nsae) {
-			throw new RuntimeException(nsae);
+			throw new InfraException(nsae);
 		}
 	}
 

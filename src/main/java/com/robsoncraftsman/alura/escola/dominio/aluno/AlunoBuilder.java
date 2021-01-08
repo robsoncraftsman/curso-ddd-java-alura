@@ -42,7 +42,7 @@ public class AlunoBuilder {
 
 	public Aluno build() {
 		final var aluno = new Aluno(this.cpf, this.nome, this.email, this.senha);
-		this.telefones.stream().forEach(t -> aluno.addTelefone(t));
+		this.telefones.stream().forEach(aluno::addTelefone);
 		return aluno;
 	}
 

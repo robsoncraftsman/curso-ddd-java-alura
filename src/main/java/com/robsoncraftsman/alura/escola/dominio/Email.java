@@ -24,10 +24,7 @@ public class Email {
 
 	@Override
 	public int hashCode() {
-		final var prime = 31;
-		var result = 1;
-		result = (prime * result) + ((this.endereco == null) ? 0 : this.endereco.hashCode());
-		return result;
+		return Objects.hash(endereco);
 	}
 
 	@Override
@@ -42,10 +39,7 @@ public class Email {
 			return false;
 		}
 		final var other = (Email) obj;
-		if (!Objects.equals(this.endereco, other.endereco)) {
-			return false;
-		}
-		return true;
+		return Objects.equals(this.endereco, other.endereco);
 	}
 
 }

@@ -1,5 +1,7 @@
 package com.robsoncraftsman.alura.escola.infra.indicacao;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 
 import com.robsoncraftsman.alura.escola.dominio.aluno.AlunoBuilder;
@@ -14,6 +16,11 @@ class EnviarEmailIndicacaoSmtpTest {
 		final var aluno = alunoBuilder.comNome("João").comEmail("joao@email.com").build();
 
 		enviarEmailIndicacao.enviarPara(aluno);
+
+		final var enviados = enviarEmailIndicacao.getEnviados();
+		assertEquals(1, enviados.size());
+		final var alunoEnviado = enviados.get(0);
+		assertEquals("joao@email.com", alunoEnviado.getEmail().getEndereco());
 	}
 
 }
