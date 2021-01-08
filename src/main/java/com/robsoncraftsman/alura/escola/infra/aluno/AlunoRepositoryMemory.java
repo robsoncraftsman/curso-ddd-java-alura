@@ -1,6 +1,7 @@
 package com.robsoncraftsman.alura.escola.infra.aluno;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import com.robsoncraftsman.alura.escola.dominio.Cpf;
@@ -13,12 +14,12 @@ public class AlunoRepositoryMemory implements AlunoRepository {
 
 	@Override
 	public void matricular(final Aluno aluno) {
-		alunos.add(aluno);
+		AlunoRepositoryMemory.alunos.add(aluno);
 	}
 
 	@Override
 	public Aluno buscarPorCpf(final Cpf cpf) {
-		return alunos.stream()
+		return AlunoRepositoryMemory.alunos.stream()
 				.filter(a -> a.getCpf().equals(cpf))
 				.findFirst()
 				.orElse(null);
@@ -26,11 +27,11 @@ public class AlunoRepositoryMemory implements AlunoRepository {
 
 	@Override
 	public List<Aluno> buscarTodosAlunosMatriculados() {
-		return AlunoRepositoryMemory.alunos;
+		return Collections.unmodifiableList(AlunoRepositoryMemory.alunos);
 	}
 
 	public void limparDados() {
-		alunos.clear();
+		AlunoRepositoryMemory.alunos.clear();
 	}
 
 }
