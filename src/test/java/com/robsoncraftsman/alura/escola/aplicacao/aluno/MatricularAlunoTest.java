@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 
 import com.robsoncraftsman.alura.escola.dominio.Cpf;
 import com.robsoncraftsman.alura.escola.dominio.Email;
+import com.robsoncraftsman.alura.escola.dominio.PublicadorEventos;
+import com.robsoncraftsman.alura.escola.dominio.aluno.LogAlunoMatriculado;
 import com.robsoncraftsman.alura.escola.infra.aluno.AlunoRepositoryMemory;
 
 class MatricularAlunoTest {
@@ -17,7 +19,11 @@ class MatricularAlunoTest {
 		final var alunoRepository = new AlunoRepositoryMemory();
 		alunoRepository.limparDados();
 
-		final var matricularAluno = new MatricularAluno(alunoRepository);
+		final var publicadorEventos = new PublicadorEventos();
+		final var logAlunoMatriculado = new LogAlunoMatriculado();
+		publicadorEventos.adicionar(logAlunoMatriculado);
+
+		final var matricularAluno = new MatricularAluno(alunoRepository, publicadorEventos);
 		matricularAluno.matricular(dados);
 
 		final var alunos = alunoRepository.buscarTodosAlunosMatriculados();

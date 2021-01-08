@@ -19,10 +19,7 @@ public class Cpf {
 
 	@Override
 	public int hashCode() {
-		final var prime = 31;
-		var result = 1;
-		result = (prime * result) + ((this.valor == null) ? 0 : this.valor.hashCode());
-		return result;
+		return Objects.hash(this.valor);
 	}
 
 	@Override
@@ -37,10 +34,12 @@ public class Cpf {
 			return false;
 		}
 		final var other = (Cpf) obj;
-		if (!Objects.equals(this.valor, other.valor)) {
-			return false;
-		}
-		return true;
+		return Objects.equals(this.valor, other.valor);
+	}
+
+	@Override
+	public String toString() {
+		return this.valor;
 	}
 
 }
