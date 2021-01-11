@@ -1,4 +1,4 @@
-package com.robsoncraftsman.alura.escola.academico.dominio.aluno;
+package com.robsoncraftsman.alura.escola.academico.aplicacao.aluno;
 
 import java.time.LocalDateTime;
 
