@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import com.robsoncraftsman.alura.escola.academico.infra.aluno.AlunoRepositoryMemory;
 import com.robsoncraftsman.alura.escola.shared.dominio.Cpf;
 import com.robsoncraftsman.alura.escola.shared.dominio.Email;
-import com.robsoncraftsman.alura.escola.shared.dominio.PublicadorEventos;
+import com.robsoncraftsman.alura.escola.shared.dominio.evento.PublicadorEventos;
 
 class MatricularAlunoTest {
 

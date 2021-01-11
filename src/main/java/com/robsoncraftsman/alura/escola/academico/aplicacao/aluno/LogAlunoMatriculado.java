@@ -3,8 +3,10 @@ package com.robsoncraftsman.alura.escola.academico.aplicacao.aluno;
 import java.time.format.DateTimeFormatter;
 import java.util.logging.Logger;
 
-import com.robsoncraftsman.alura.escola.shared.dominio.Evento;
-import com.robsoncraftsman.alura.escola.shared.dominio.Ouvinte;
+import com.robsoncraftsman.alura.escola.academico.dominio.aluno.EventoAlunoMatriculado;
+import com.robsoncraftsman.alura.escola.shared.dominio.evento.Evento;
+import com.robsoncraftsman.alura.escola.shared.dominio.evento.Ouvinte;
+import com.robsoncraftsman.alura.escola.shared.dominio.evento.TipoDeEvento;
 
 public class LogAlunoMatriculado extends Ouvinte {
 
@@ -12,7 +14,7 @@ public class LogAlunoMatriculado extends Ouvinte {
 
 	@Override
 	protected boolean deveProcessarEvento(final Evento evento) {
-		return (evento instanceof EventoAlunoMatriculado);
+		return evento.tipo() == TipoDeEvento.ALUNO_MATRICULADO;
 	}
 
 	@Override
@@ -20,7 +22,7 @@ public class LogAlunoMatriculado extends Ouvinte {
 		final var eventoAlunoMatriculado = (EventoAlunoMatriculado) evento;
 		final var momentoFormatado = evento.momento().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:MM"));
 		final var log = String.format("Aluno com CPF '%s' matriculado em '%s'.", eventoAlunoMatriculado.getCpfDoAluno(), momentoFormatado);
-		LOGGER.info(log);
+		LogAlunoMatriculado.LOGGER.info(log);
 	}
 
 }

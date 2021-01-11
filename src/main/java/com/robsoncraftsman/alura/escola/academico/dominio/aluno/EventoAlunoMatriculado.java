@@ -1,9 +1,11 @@
-package com.robsoncraftsman.alura.escola.academico.aplicacao.aluno;
+package com.robsoncraftsman.alura.escola.academico.dominio.aluno;
 
 import java.time.LocalDateTime;
+import java.util.Map;
 
 import com.robsoncraftsman.alura.escola.shared.dominio.Cpf;
-import com.robsoncraftsman.alura.escola.shared.dominio.Evento;
+import com.robsoncraftsman.alura.escola.shared.dominio.evento.Evento;
+import com.robsoncraftsman.alura.escola.shared.dominio.evento.TipoDeEvento;
 
 public class EventoAlunoMatriculado implements Evento {
 
@@ -22,6 +24,16 @@ public class EventoAlunoMatriculado implements Evento {
 	@Override
 	public LocalDateTime momento() {
 		return this.momento;
+	}
+
+	@Override
+	public TipoDeEvento tipo() {
+		return TipoDeEvento.ALUNO_MATRICULADO;
+	}
+
+	@Override
+	public Map<String, Object> informacoes() {
+		return Map.of("cpf", getCpfDoAluno());
 	}
 
 }
