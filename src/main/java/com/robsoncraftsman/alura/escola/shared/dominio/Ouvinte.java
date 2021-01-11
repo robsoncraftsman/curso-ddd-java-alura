@@ -1,4 +1,4 @@
-package com.robsoncraftsman.alura.escola.academico.dominio;
+package com.robsoncraftsman.alura.escola.shared.dominio;
 
 public abstract class Ouvinte {
 

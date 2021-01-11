@@ -2,7 +2,7 @@ package com.robsoncraftsman.alura.escola.gamificacao.dominio.selo;
 
 import java.util.List;
 
-import com.robsoncraftsman.alura.escola.academico.dominio.Cpf;
+import com.robsoncraftsman.alura.escola.shared.dominio.Cpf;
 
 public interface SeloRepository {
 

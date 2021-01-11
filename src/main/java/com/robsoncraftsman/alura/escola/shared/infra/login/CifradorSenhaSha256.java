@@ -1,12 +1,12 @@
-package com.robsoncraftsman.alura.escola.academico.infra.login;
+package com.robsoncraftsman.alura.escola.shared.infra.login;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 
-import com.robsoncraftsman.alura.escola.academico.dominio.login.CifradorSenha;
-import com.robsoncraftsman.alura.escola.academico.infra.InfraException;
+import com.robsoncraftsman.alura.escola.shared.dominio.login.CifradorSenha;
+import com.robsoncraftsman.alura.escola.shared.infra.InfraException;
 
 public class CifradorSenhaSha256 implements CifradorSenha {
 

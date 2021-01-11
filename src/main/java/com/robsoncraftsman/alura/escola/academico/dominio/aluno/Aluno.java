@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.robsoncraftsman.alura.escola.academico.dominio.Cpf;
-import com.robsoncraftsman.alura.escola.academico.dominio.Email;
-import com.robsoncraftsman.alura.escola.academico.dominio.Telefone;
-import com.robsoncraftsman.alura.escola.academico.dominio.ValidationException;
+import com.robsoncraftsman.alura.escola.shared.dominio.Cpf;
+import com.robsoncraftsman.alura.escola.shared.dominio.Email;
+import com.robsoncraftsman.alura.escola.shared.dominio.Telefone;
+import com.robsoncraftsman.alura.escola.shared.dominio.ValidationException;
 
 public class Aluno {
 

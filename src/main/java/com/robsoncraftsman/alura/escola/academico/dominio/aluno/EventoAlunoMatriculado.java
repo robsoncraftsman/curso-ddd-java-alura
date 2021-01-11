@@ -2,8 +2,8 @@ package com.robsoncraftsman.alura.escola.academico.dominio.aluno;
 
 import java.time.LocalDateTime;
 
-import com.robsoncraftsman.alura.escola.academico.dominio.Cpf;
-import com.robsoncraftsman.alura.escola.academico.dominio.Evento;
+import com.robsoncraftsman.alura.escola.shared.dominio.Cpf;
+import com.robsoncraftsman.alura.escola.shared.dominio.Evento;
 
 public class EventoAlunoMatriculado implements Evento {
 

@@ -1,4 +1,4 @@
-package com.robsoncraftsman.alura.escola.academico.dominio.login;
+package com.robsoncraftsman.alura.escola.shared.dominio.login;
 
 public interface CifradorSenha {
 

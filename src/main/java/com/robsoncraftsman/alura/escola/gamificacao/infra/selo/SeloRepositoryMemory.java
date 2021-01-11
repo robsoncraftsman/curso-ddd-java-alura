@@ -5,9 +5,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.robsoncraftsman.alura.escola.academico.dominio.Cpf;
 import com.robsoncraftsman.alura.escola.gamificacao.dominio.selo.Selo;
 import com.robsoncraftsman.alura.escola.gamificacao.dominio.selo.SeloRepository;
+import com.robsoncraftsman.alura.escola.shared.dominio.Cpf;
 
 public class SeloRepositoryMemory implements SeloRepository {
 

@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.robsoncraftsman.alura.escola.academico.dominio.Cpf;
 import com.robsoncraftsman.alura.escola.academico.dominio.aluno.Aluno;
 import com.robsoncraftsman.alura.escola.academico.dominio.aluno.AlunoRepository;
+import com.robsoncraftsman.alura.escola.shared.dominio.Cpf;
 
 public class AlunoRepositoryMemory implements AlunoRepository {
 

@@ -1,4 +1,4 @@
-package com.robsoncraftsman.alura.escola.academico.dominio;
+package com.robsoncraftsman.alura.escola.shared.dominio;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;

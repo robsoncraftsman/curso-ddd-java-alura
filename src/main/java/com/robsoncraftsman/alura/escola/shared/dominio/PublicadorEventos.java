@@ -1,4 +1,4 @@
-package com.robsoncraftsman.alura.escola.academico.dominio;
+package com.robsoncraftsman.alura.escola.shared.dominio;
 
 import java.util.ArrayList;
 import java.util.List;

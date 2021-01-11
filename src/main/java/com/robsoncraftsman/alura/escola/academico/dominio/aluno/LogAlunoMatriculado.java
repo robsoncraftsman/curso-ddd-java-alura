@@ -3,8 +3,8 @@ package com.robsoncraftsman.alura.escola.academico.dominio.aluno;
 import java.time.format.DateTimeFormatter;
 import java.util.logging.Logger;
 
-import com.robsoncraftsman.alura.escola.academico.dominio.Evento;
-import com.robsoncraftsman.alura.escola.academico.dominio.Ouvinte;
+import com.robsoncraftsman.alura.escola.shared.dominio.Evento;
+import com.robsoncraftsman.alura.escola.shared.dominio.Ouvinte;
 
 public class LogAlunoMatriculado extends Ouvinte {
 

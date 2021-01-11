@@ -1,4 +1,4 @@
-package com.robsoncraftsman.alura.escola.academico.infra.login;
+package com.robsoncraftsman.alura.escola.shared.infra.login;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;

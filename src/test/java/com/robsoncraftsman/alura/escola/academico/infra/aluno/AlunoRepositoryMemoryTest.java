@@ -5,8 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.Test;
 
-import com.robsoncraftsman.alura.escola.academico.dominio.Cpf;
 import com.robsoncraftsman.alura.escola.academico.dominio.aluno.AlunoBuilder;
+import com.robsoncraftsman.alura.escola.shared.dominio.Cpf;
 
 class AlunoRepositoryMemoryTest {
 

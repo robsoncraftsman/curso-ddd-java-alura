@@ -4,11 +4,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import com.robsoncraftsman.alura.escola.academico.dominio.Cpf;
-import com.robsoncraftsman.alura.escola.academico.dominio.Email;
-import com.robsoncraftsman.alura.escola.academico.dominio.PublicadorEventos;
 import com.robsoncraftsman.alura.escola.academico.dominio.aluno.LogAlunoMatriculado;
 import com.robsoncraftsman.alura.escola.academico.infra.aluno.AlunoRepositoryMemory;
+import com.robsoncraftsman.alura.escola.shared.dominio.Cpf;
+import com.robsoncraftsman.alura.escola.shared.dominio.Email;
+import com.robsoncraftsman.alura.escola.shared.dominio.PublicadorEventos;
 
 class MatricularAlunoTest {
 

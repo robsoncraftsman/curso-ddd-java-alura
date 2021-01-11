@@ -5,8 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-import com.robsoncraftsman.alura.escola.academico.dominio.Telefone;
-import com.robsoncraftsman.alura.escola.academico.dominio.ValidationException;
+import com.robsoncraftsman.alura.escola.shared.dominio.Telefone;
+import com.robsoncraftsman.alura.escola.shared.dominio.ValidationException;
 
 class AlunoTest {
 

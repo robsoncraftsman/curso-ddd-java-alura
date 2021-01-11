@@ -1,4 +1,4 @@
-package com.robsoncraftsman.alura.escola.academico.infra;
+package com.robsoncraftsman.alura.escola.shared.infra;
 
 public class InfraException extends RuntimeException {
 

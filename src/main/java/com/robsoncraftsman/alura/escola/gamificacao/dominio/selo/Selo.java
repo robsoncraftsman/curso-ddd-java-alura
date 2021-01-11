@@ -1,6 +1,6 @@
 package com.robsoncraftsman.alura.escola.gamificacao.dominio.selo;
 
-import com.robsoncraftsman.alura.escola.academico.dominio.Cpf;
+import com.robsoncraftsman.alura.escola.shared.dominio.Cpf;
 
 public class Selo {
 

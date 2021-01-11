@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import com.robsoncraftsman.alura.escola.academico.dominio.Cpf;
 import com.robsoncraftsman.alura.escola.gamificacao.dominio.selo.Selo;
+import com.robsoncraftsman.alura.escola.shared.dominio.Cpf;
 
 class SeloRepositoryMemoryTest {
 

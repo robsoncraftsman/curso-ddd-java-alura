@@ -1,8 +1,8 @@
 package com.robsoncraftsman.alura.escola.academico.aplicacao.aluno;
 
-import com.robsoncraftsman.alura.escola.academico.dominio.PublicadorEventos;
 import com.robsoncraftsman.alura.escola.academico.dominio.aluno.AlunoRepository;
 import com.robsoncraftsman.alura.escola.academico.dominio.aluno.EventoAlunoMatriculado;
+import com.robsoncraftsman.alura.escola.shared.dominio.PublicadorEventos;
 
 public class MatricularAluno {
 
